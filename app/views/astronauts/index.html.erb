@@ -5,6 +5,11 @@
     <li> Name:<%= astronaut.name %></li>
     <li> Age: <%= astronaut.job %> </li>
     <li>Job: <%= astronaut.age %> </li>
+    <li>Total Time in Space: astronaut.space_missions.total_time_in_space </li>
+    <% astronaut.astronaut_space_missions.each do |mission| %>
+      <li>Space Mission: <%= mission.space_mission.title %></li>
     <% end %>
 
+
   </ul>
+  <% end %>
